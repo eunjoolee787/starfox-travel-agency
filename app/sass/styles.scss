@@ -1,3 +1,6 @@
+@import "partials/settings";
+@import "../bower_components/foundation/scss/foundation.scss";
+
 $gunmetal_gray: #232329;
 body{
   background-color: $gunmetal_gray;

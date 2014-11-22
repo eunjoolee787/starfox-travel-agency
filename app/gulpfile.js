@@ -8,7 +8,7 @@ gulp.task('styles', function (){
 });
 
 gulp.task('watch_styles', function (){
-  gulp.watch('./sass/*.scss', ['styles']);
+  gulp.watch('./sass/**/*.scss', ['styles']);
   gulp.watch('*.html', notifyLiveReload);
   gulp.watch('css/*.css', notifyLiveReload);
 });
@@ -37,4 +37,4 @@ gulp.task('livereload', function(){
   tinylr.listen(35729);
 });
 
-gulp.task('default', ['watch_styles', 'express', 'livereload']);
+gulp.task('default', ['styles', 'watch_styles', 'express', 'livereload']);
