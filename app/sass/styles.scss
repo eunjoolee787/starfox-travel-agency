@@ -69,14 +69,27 @@ header#pageHeader {
     }
   }
 }
+ // & .row {
+ //    .contain-to-grid {
+ //      margin-bottom: -32px;
 
 .content {
   padding-top: 50px;
 
+
   .row {
     background-color: $main-teal;
-    //background-image: url('/assets/ship.png');
-    //background-repeat: no-repeat;
+    margin-bottom: -52px;
+
+    & .heroText {
+      font-size: 23px;
+      font-weight: $font-light;
+      padding: 25px; 
+    }
+
+    & span.bold_new{
+      font-weight: $font-bold;
+    }
   }
   & .ufoImg {
     width: 300px;
@@ -88,6 +101,10 @@ header#pageHeader {
 
   & .button{
    background-color: $light-gray;
+   width: 285px;
+   height: 60px;
+   font-weight: $font-light;
+   font-size: 20px;
   }
 }
 

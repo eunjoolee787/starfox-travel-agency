@@ -5599,7 +5599,14 @@ header#pageHeader {
 .content {
   padding-top: 50px; }
   .content .row {
-    background-color: #8EC5C5; }
+    background-color: #8EC5C5;
+    margin-bottom: -52px; }
+    .content .row .heroText {
+      font-size: 23px;
+      font-weight: 300;
+      padding: 25px; }
+    .content .row span.bold_new {
+      font-weight: 700; }
   .content .ufoImg {
     width: 300px;
     height: 180px;
@@ -5607,4 +5614,8 @@ header#pageHeader {
     background-image: url('/assets/ship.png');
     background-repeat: no-repeat; }
   .content .button {
-    background-color: #5b5b5b; }
+    background-color: #5b5b5b;
+    width: 285px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 20px; }
