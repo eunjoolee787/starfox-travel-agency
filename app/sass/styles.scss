@@ -1,11 +1,102 @@
+//colors
+$main-teal: #8EC5C5;
+$dark-gray: #2d2d2d;
+$light-gray: #5b5b5b;
+$white: #FFF;
+//font weight
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$body-font-family: 'Open Sans', sans-serif;
+
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300,700.css";
 @import "partials/settings";
 @import "../bower_components/foundation/scss/foundation.scss";
 
-$gunmetal_gray: #232329;
-body{
-  background-color: $gunmetal_gray;
-  color: white;
+@mixin border-radius($radius: 10px){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
 }
+header#pageHeader {
+  padding: 50px 0 0;
+  background-color: $main-teal;
+  background-image: url('/assets/header_bg.png');
+  //position: relative;
+  & .logoImg {
+    width: 160px;
+    height: 80px;
+    margin: 0 auto;
+    background-image: url('/assets/logo.png');
+    background-repeat: no-repeat;
+  }
+  & h1.pageTitle{
+    font-size: 28px;
+    font-weight: $font-light;
+    text-align: center;
+    & span.bold{
+      font-weight: $font-bold;
+    }
+  }
+ & .row {
+    .contain-to-grid {
+      margin-bottom: -32px;
+      // position: absolute;
+      // bottom: -20px;
+      @include border-radius();
+      nav.top-bar {
+      @include border-radius();
+        section.top-bar-section {
+          text-align: center;
+          ul {
+            @media #{$medium-up} {
+              margin: 0 auto;
+              display: inline-block;
+            }
+            li {
+              margin-right: 10px;
+              &.active a{
+                color: $white;
+                font-weight: $font-bold;
+              }
+              a {
+                color: $main-teal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding-top: 50px;
+
+  .row {
+    background-color: $main-teal;
+    //background-image: url('/assets/ship.png');
+    //background-repeat: no-repeat;
+  }
+  & .ufoImg {
+    width: 300px;
+    height: 180px;
+    margin: 0 auto;
+    background-image: url('/assets/ship.png');
+    background-repeat: no-repeat;
+  }
+
+  & .button{
+   background-color: $light-gray;
+  }
+}
+
+
+
+
+
+
+
 
 
 

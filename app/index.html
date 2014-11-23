@@ -2,18 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Starfox Travel Agency</title>
-  <script src="/bower_components/modernizr/modernizr.js"></script>"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starfox Intergalacitc Travel Agency</title>
+  <script src="/bower_components/modernizr/modernizr.js"></script></script>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+  <header id="pageHeader">
+   <div class="logoImg"></div> 
+   <h1 class="pageTitle"><span class="bold">StarFox</span> Intergalatic Travel Agency</h1>
+    <div class="row">
+      <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+           <!--  <li class="name">
+              <h1><a href="#">My Site</a></h1>
+            </li> -->
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
 
-<header>
-  <img src="" alt="This is a picture">
-</header>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+          <!--   <ul class="right">
+              <li class="active"><a href="#">Right Button Active</a></li>
+              <li class="has-dropdown">
+                <a href="#">Right Button Dropdown</a>
+                <ul class="dropdown">
+                  <li><a href="#">First link in dropdown</a></li>
+                  <li class="active"><a href="#">Active link in dropdown</a></li>
+                </ul>
+              </li>
+            </ul> -->
 
+            <!-- Left Nav Section -->
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Intersteller Travel</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div> <!-- ends contain-to-grid -->
+    </div>  <!-- ends .row -->
+  </header>
+  
+  <div class="content">
+    <div class="row">
+      <div class="large-7 columns">
+        <p class="heroText">We Will tak you to the <span>Moon and Back</span>! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis libero vero ad consectetur sunt numquam dolorem dicta nisi. Similique soluta delectus rerum libero voluptates velit culpa aliquid nihil ipsum blanditiis.</p>
+      </div>
+      <div class="large-5 columns">
+        <div class="ufoImg"></div>
+          <!-- <a href="#"><button>Find Out More</button></a>  -->
+        <a href="#" class="button">Find Out More</a>
+        </div>
+    </div>
+    <div class="row">
+      <div class="large-4 columns"></div>
+      <div class="large-4 columns"></div>
+      <div class="large-4 columns"></div>
+    </div>
 
-  <h1>extract the contents of Layout.zip into your ./layout/subdirectory</h1>
+  </div> <!-- end .content -->
+
+  <script src="/bower_components/foundation/js/vendor/jquery.js"></script>
+  <script src="/bower_components/foundation/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>
+
