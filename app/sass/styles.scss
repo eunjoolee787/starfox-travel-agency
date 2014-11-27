@@ -22,15 +22,22 @@ header#pageHeader {
   padding: 50px 0 0;
   background-color: $main-teal;
   background-image: url('/assets/header_bg.png');
-  //position: relative;
-  & .logoImg {
+
+  .bars{
+    background-image: url('/assets/menu_iconon.png');
+    height: 80px;
+    width: 160px;
+    margin-left: 525px;
+    background-repeat: no-repeat;
+  }
+  .logoImg {
     width: 160px;
     height: 80px;
     margin: 0 auto;
     background-image: url('/assets/logo.png');
     background-repeat: no-repeat;
   }
-  & h1.pageTitle{
+  h1.pageTitle{
     font-size: 28px;
     font-weight: $font-light;
     text-align: center;
@@ -38,11 +45,10 @@ header#pageHeader {
       font-weight: $font-bold;
     }
   }
- & .row {
+  .row {
     .contain-to-grid {
       margin-bottom: -32px;
-      // position: absolute;
-      // bottom: -20px;
+
       @include border-radius();
       nav.top-bar {
       @include border-radius();
@@ -88,7 +94,7 @@ header#pageHeader {
       padding: 25px; 
     }
 
-    & span.bold_new{
+    span.bold_new{
       font-weight: $font-bold;
     }
   }
@@ -121,14 +127,19 @@ header#pageHeader {
 // start .cost_blocks
 
 .cost_blocks{
-  padding-top: 80px;
-  @include border-radius();
+   @media #{$small-only} {
+    margin: 0 auto;
+    display: inline-block;
+    width: 200px;
+  } 
+    padding-top: 80px;
+    @include border-radius();
 
   .cost_block{
     @include border-radius();
     background-color: $light-gray;
     width: 300px;
-    height: 300px;
+    height: 312px;
     color: white;
     text-align: center;
   }
@@ -137,6 +148,7 @@ header#pageHeader {
     color: white;
     font-size: 20px;
     padding-top: 20px;
+    border-bottom: 2px solid gray;
   }
 
   .amount{
@@ -160,7 +172,7 @@ header#pageHeader {
 
   .last_cost_block{
     // background-color: red;
-    width: 200px;
+    // width: 200px;
     margin: 0 auto;
     height: 75px;
 
@@ -177,6 +189,7 @@ header#pageHeader {
       padding-top: 0;
       border-bottom: none;
       font-weight: $font-light;
+      border-bottom: 2px solid gray;
     }
   
     .title_deals{

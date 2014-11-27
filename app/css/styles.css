@@ -5561,6 +5561,12 @@ header#pageHeader {
   padding: 50px 0 0;
   background-color: #8EC5C5;
   background-image: url('/assets/header_bg.png'); }
+  header#pageHeader .bars {
+    background-image: url('/assets/menu_iconon.png');
+    height: 80px;
+    width: 160px;
+    margin-left: 525px;
+    background-repeat: no-repeat; }
   header#pageHeader .logoImg {
     width: 160px;
     height: 80px;
@@ -5637,19 +5643,25 @@ header#pageHeader {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px; }
+  @media only screen and (max-width: 40em) {
+    .cost_blocks {
+      margin: 0 auto;
+      display: inline-block;
+      width: 200px; } }
   .cost_blocks .cost_block {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     background-color: #5b5b5b;
     width: 300px;
-    height: 300px;
+    height: 312px;
     color: white;
     text-align: center; }
   .cost_blocks h2 {
     color: white;
     font-size: 20px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    border-bottom: 2px solid gray; }
   .cost_blocks .amount {
     font-size: 60px;
     padding-top: 25px;
@@ -5663,7 +5675,6 @@ header#pageHeader {
   .cost_blocks ul {
     list-style-type: none; }
   .cost_blocks .last_cost_block {
-    width: 200px;
     margin: 0 auto;
     height: 75px; }
     .cost_blocks .last_cost_block .title {
@@ -5674,7 +5685,8 @@ header#pageHeader {
       font-size: 35px;
       padding-top: 0;
       border-bottom: none;
-      font-weight: 300; }
+      font-weight: 300;
+      border-bottom: 2px solid gray; }
     .cost_blocks .last_cost_block .title_deals {
       font-size: 22px;
       padding-top: 25px;
