@@ -1,9 +1,13 @@
-//- mixin render_pet (pet)
-//-   li 
-//-     | hello
-//-     = pet
+mixin render_pet (pet)
+  li 
+    | hello
+    = pet
 
 extends ./layout.jade
+
+div content
+    We will take you to the
+      p .{ hero_text }
 
 //- block content
 //-   p test #{ 2 + 5 }
