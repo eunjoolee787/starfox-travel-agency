@@ -1,23 +1,67 @@
 doctype html
-html(lang="en")
+html(lang="en")  
 head
   meta(charset="UTF-8")
-  title My cool layout
+  title Start Intergalacitic Travel Agency 
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  script(src="/bower_components/modernizr/modernizr.js")
+  link(rel="stylesheet" href="/css/styles.css")
+
 body
-  div#header
-    | my cool header
+  header#pageHeader
+    div.logoImg
+    div.bars
+    h1.pageTitle
+    span.class
+      | StarFox Intergalacitic Travel Agency
+
+    div.row
+    div.contain-to-grid
+    nav.top-bar
+    nav.data-topbar
+    ul.title-area
+    //- li.toggle-bar
+
+  section.top-bar-section
+    ul
+      li.active
+
 
   div#content
     block content
 
-  div#footer
-    | hello footer
+footer
+  p.footer_title
+    | UFO graphics designed by Karl Gaynor and Dmitriy Lagunov from the Noun Project 
 
-  span.copyright
-    block copyright
-      | &copy; Ray 2066
 
-  block scripts
-    script(src="jquery.js")
-  
-  
+//- html(lang="en")
+//- head
+//-   meta(charset="UTF-8")
+//-   title My cool layout
+//- body
+//-   div#header
+//-     | my cool header
+
+//-   div#content
+//-     block content
+
+//-   div#footer
+//-     | hello footer
+
+//-   span.copyright
+//-     block copyright
+//-       | &copy; Ray 2066
+
+//-   block scripts
+//-     script(src="jquery.js")
+
+
+
+
+
+
+
+
+
+

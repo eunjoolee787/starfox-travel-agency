@@ -1,24 +1,24 @@
-mixin render_pet (pet)
-  li 
-    | hello
-    = pet
+//- mixin render_pet (pet)
+//-   li 
+//-     | hello
+//-     = pet
 
 extends ./layout.jade
 
-block content
-  p test #{ 2 + 5 }
-  p
-    if (myname === "so annoying")
-      span ejs tags are so annoying
-    else
-      | your name is #{myname}
+//- block content
+//-   p test #{ 2 + 5 }
+//-   p
+//-     if (myname === "so annoying")
+//-       span ejs tags are so annoying
+//-     else
+//-       | your name is #{myname}
 
-  ul
-    each pet in mypets
-      li #{ pet }
+//-   ul
+//-     each pet in mypets
+//-       li #{ pet }
 
-block copyright
-  | &copy; Mariel 2014
+//- block copyright
+//-   | &copy; Mariel 2014
 
-block scripts
-    script(src="jquery.js")
+//- block scripts
+//-     script(src="jquery.js")

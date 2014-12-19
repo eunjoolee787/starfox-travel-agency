@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 
 //MIDDLEWARRE
-app.use(express.static('public'));
+app.use(express.static('./'));
 app.set('view engine', 'jade');
 
 //app.engine('html', require('ejs').renderFile);
